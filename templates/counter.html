@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counter Page</title>
+</head>
+<body>
+    <h1>Counter Page</h1>
+    <p><strong>Current Counter:</strong> {{ counter }}</p>
+    <p><strong>Reset Prime:</strong> {{ reset_prime }}</p>
+    <form action="{{ url_for('counter_page') }}" method="post">
+        <button type="submit">Increment Counter</button>
+    </form>
+    <br>
+    <form action="{{ url_for('index') }}" method="get">
+        <button type="submit">Go Back to Main Page</button>
+    </form>
+</body>
+</html>
